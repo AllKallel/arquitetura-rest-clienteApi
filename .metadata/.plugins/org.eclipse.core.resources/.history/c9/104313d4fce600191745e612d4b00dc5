@@ -1,0 +1,17 @@
+package br.com.unipac.clients.model.DAO;
+
+import java.util.List;
+
+import br.com.unipac.clients.model.domain.Cliente;
+
+public interface ClienteDAO {
+	boolean salvar(Cliente cliente);
+
+	boolean aterar(Long id, Cliente cliente);
+
+	List<Cliente> listarTodos();
+
+	boolean buscarPorId(Cliente cliente);
+
+	boolean removerPorId(Cliente cliente);
+}

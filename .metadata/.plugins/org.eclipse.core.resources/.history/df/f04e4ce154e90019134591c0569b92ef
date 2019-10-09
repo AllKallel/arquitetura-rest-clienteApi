@@ -1,0 +1,21 @@
+package br.com.unipac.cliente.resources;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.unipac.cliente.model.DAO.ClienteDAO;
+
+@RestController
+@RequestMapping(path = "/cliente")
+
+
+public class ClienteResources {
+	
+	@Autowired
+	private ClienteDAO dao;
+	
+	@RequestMapping(method = ResquestMapping.GET, 
+			produces = MediaType.APPLICATION_JSON_UTF8_VALUES);
+	
+}
